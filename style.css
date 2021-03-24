@@ -96,10 +96,10 @@ h1 {
 
 @media screen and (max-width: 800px) {
     .container {
-        width: 80%;
+        width: 80% !important;
     }
 
     .buttons-wrapper {
-        flex-direction: column;
+        flex-direction: column !important;
     }
 }
