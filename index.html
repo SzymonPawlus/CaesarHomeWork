@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Szyfr Cezara</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+</head>
+<body>
+
+<div class="container">
+    <h1>Szyfr Cezara</h1>
+    <textarea placeholder="Wpisz tekst do zaszyfrowania (Max. 300 znaków)" id="input-text" maxlength="300"></textarea>
+    <label for="shift">Podaj przesunięcie szyfru: </label>
+    <input class="shift-input" maxlength="2" type="number" id="shift" value="13"/>
+    <div class="buttons-wrapper">
+        <button class="button"  onclick="cipher(true)">Szyfruj!</button>
+        <button class="button" onclick="cipher(false)">Odszyfruj!</button>
+        <button class="button" onclick="clearAll()">Wyczyść!</button>
+        <button class="button" onclick="copy()">Skopiuj!</button>
+    </div>
+    <div id="text-holder"></div>
+    <div id="toast">
+        <div class="cancel" onclick="hide()">X</div>
+        <h3>Skopiowano tekst do schowka!</h3>
+    </div>
+</div>
+
+</body>
+</html>
