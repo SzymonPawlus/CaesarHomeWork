@@ -75,7 +75,7 @@ function copy() {
         let toast = document.getElementById('toast');
         toast.className = "click";
 
-        timer = setTimeout(function(){ toast.className = ""; }, 3000);
+        timer = setTimeout(function(){ toast.className = ""; }, 5000);
     });
 }
 
