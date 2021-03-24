@@ -20,7 +20,7 @@ h1 {
 
 #input-text {
     margin-top: 50px;
-    width: 100%;
+    width: calc(100% - 20px);
     height: 150px;
     resize: none;
     padding: 10px;
@@ -65,7 +65,7 @@ h1 {
     padding: 10px;
     margin-top: 50px;
     border-radius: 6px;
-    width: 100%;
+    width: calc(100% - 20px);
     height: 150px;
     border: 2px solid #000;
 }
@@ -101,5 +101,6 @@ h1 {
 
     .buttons-wrapper {
         flex-direction: column !important;
+        gap: 10px;
     }
 }
