@@ -93,3 +93,13 @@ h1 {
     right: 5px;
     cursor: pointer;
 }
+
+@media screen and (max-width: 800px) {
+    .container {
+        width: 80%;
+    }
+
+    .buttons-wrapper {
+        flex-direction: column;
+    }
+}
