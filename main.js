@@ -7,10 +7,17 @@ class Cipher {
     }
 
     cipher = (shift)  => {
+        // Cipher every character
         this.cipheredText = this.text.split("").map((char) => {
+            // Get letter number [A - 0, B - 1, C - 2, ... , Z - 25]
             let letterNumber = char.charCodeAt(0) - 65;
+
+            // Check if letter is latin
             if(letterNumber < 0 || letterNumber > 25) return char;
-            letterNumber = mod(letterNumber + shift, 26) ;
+
+            // Shift and calulate (positive) modulo
+            letterNumber = mod(letterNumber + shift, 26);
+
             return String.fromCharCode(letterNumber + 65)
         }).join("");
     }
